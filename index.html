@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+  <!-- Fonte -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- Estilo -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+
+<body data-bs-theme="light">
+  <!--header-->
+  <header>
+    <!--nav-->
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top bg-light">
+      <div class="container-fluid">
+        <a id="navbarPortifolio" href="#banner" class="navbar-brand traduzivel">Portifólio</a>
+        <button id="btnNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <!--links-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="navbar-nav nav-underline">
+            <a id="navbarSobre" href="#sobre" class="nav-link traduzivel">Sobre</a>
+            <a id="navbarProjetos" href="#projetos" class="nav-link traduzivel">Projetos</a>
+            <a id="navbarTecnologias" href="#tecnologias" class="nav-link traduzivel">Tecnologias</a>
+            <a id="navbarExperiencias" href="#experiencias" class="nav-link traduzivel">Experiências</a>
+            <a id="navbarIdiomas" href="#idiomas" class="nav-link traduzivel">Idiomas</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav-->
+  </header>
+  <!--header-->
+
+  <!--content-->
+  <main id="main" class="text-center">
+    <!--banner-->
+    <section id="banner" class="bg-light">
+      <div class="container">
+        <div class="row align-items-center pb-5">
+          <div class="col">
+            <h1 id="bannerOla" class="traduzivel">Olá!</h1>
+            <p id="bannerNome" class="fs-3 traduzivel">
+              Meu nome é Vinícius Benevides
+            </p>
+            <p id="bannerAnimado" class="fs-4 animated-text traduzivel">
+              Eu sou um <b><span></span></b>
+            </p>
+          </div>
+          <div class="col">
+            <img src="assets/images/perfil_temp.jpg" class="img-fluid rounded" alt="Foto de Perfil Vinícius Benevides">
+          </div>
+        </div>
+        <div class="py-5">
+          <a id="bannerBtnProjetos" class="btn btn-outline-secondary btn-lg traduzivel" href="#projetos" role="button">Conheça meus projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!--sobre-->
+    <section id="sobre" class="bg-white">
+      <div class="container">
+        <div class="row pb-5">
+          <h2 id="sobreTitulo" class="traduzivel">Sobre Mim</h2>
+        </div>
+        <div class="row">
+          <p id="sobreTexto" class="traduzivel">
+            Sou um jovem programador full-stack,
+            apaixonado por tecnologia e seu impacto no dia a dia das pessoas!
+            <br><br>
+            Minhas principais proficiências são C#, .Net Core, Python, programação Web e Machine Learning.
+            Sou uma pessoa proativa, que se empolga e empenha em resolver desafios!
+            <br><br>
+            Atualmente sou estudante de Engenharia de Computação na FESA e
+            estagiário em desenvolvimento de sistemas na empresa Termomecanica SP S.A.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--projetos-->
+    <section id="projetos" class="bg-light">
+      <div class="container">
+        <div class="row pb-5">
+          <h2 id="projetoTitulo" class="traduzivel">Projetos de Destaque</h2>
+        </div>
+        <div class="row m-5">
+          <div id="carousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <h5 id="projetoTechInvestTitulo" class="card-header traduzivel">Tech Invest</h5>
+                  <div class="card-body">
+                    <a target="_blank" href="https://github.com/ViniciusBenevidesdaSilva/Tech-Invest">
+                      <img src="assets/images/projeto-01-TechInvest.png" class="img-fluid my-4"
+                        alt="Logo da Tech Invest">
+                      <p id="projetoTechInvestTexto" class="card-text traduzivel">API de investimentos desenvolvida em <b>.Net Core</b> usando Clean
+                        Architecture</p>
+                    </a>
+                    <div class="accordion accordion-flush pt-3" id="accordionFlushOne">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed text-center align-items-center" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <i class="bi bi-tools"></i>&nbsp;
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushOne">
+                          <ul class="text-start">
+                            <li class="pt-2">.Net Core</li>
+                            <li>C#</li>
+                            <li>Clean Architecture</li>
+                            <li>Jwt</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <h5 id="projetoRecomendadorTitulo" class="card-header traduzivel">Recomendador de Filmes</h5>
+                  <div class="card-body ">
+                    <a target="_blank" href="https://github.com/ViniciusBenevidesdaSilva/Recomendador-de-Filmes">
+                      <img src="assets/images/projeto-02-Recomendador.png" class="img-fluid my-4"
+                        alt="Tela principal do recomendador de filmes">
+                      <p id="projetoRecomendadorTexto" class="card-text traduzivel">Sistema de Recomendação de filmes feito em <b>Python</b> 
+                        utilizando Clusterização por Machine Learning
+                      </p>
+                    </a>
+                    <div class="accordion accordion-flush pt-3" id="accordionFlushTwo">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <i class="bi bi-tools"></i>&nbsp;
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushTwo">
+                          <ul class="text-start">
+                            <li class="pt-2">Python</li>
+                            <li>SKLearn</li>
+                            <li>Flask Framework</li>
+                            <li>Machine Learning</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <h5 id="projetoVaiEVemTitulo" class="card-header traduzivel">Vai e Vem</h5>
+                  <div class="card-body ">
+                    <a target="_blank" href="https://github.com/MarcellyMarsura/Projeto-VaieVem">
+                      <img src="assets/images/projeto-03-VaiEVem.png" class="img-fluid my-4"
+                        alt="Tela principal do recomendador de filmes">
+                      <p id="projetoVaiEVemTexto" class="card-text traduzivel">Sistema em Java para controle financeiro entregue para a disciplina de <b>Linguagem de Programação II</b>
+                      </p>
+                    </a>
+                    <div class="accordion accordion-flush pt-3" id="accordionFlushThree">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <i class="bi bi-tools"></i>&nbsp;
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushThree">
+                          <ul class="text-start">
+                            <li class="pt-2">Java</li>
+                            <li>JavaDB</li>
+                            <li>JavaFX</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <h5 id="projetoEasyLanguageTitulo" class="card-header traduzivel">Easy Language</h5>
+                  <div class="card-body ">
+                    <a target="_blank" href="https://github.com/ViniciusBenevidesdaSilva/EasyLanguage">
+                      <img src="assets/images/projeto-04-EasyLanguage.png" class="img-fluid py-4"
+                        alt="Trecho de código compilado pela Easy Language">
+                      <p id="projetoEasyLanguageTexto" class="card-text traduzivel">Projeto entregue para a disciplina de <b>Compiladores</b>, na qual foi
+                        configurada uma nova pseudo-linguagem de programação</p>
+                    </a>
+                    <div class="accordion accordion-flush pt-3" id="accordionFlushFour">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            <i class="bi bi-tools"></i>&nbsp;
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushFour">
+                          <ul class="text-start">
+                            <li class="pt-2">Java</li>
+                            <li>ANTLR</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <h5 id="projetoBookSmartTitulo" class="card-header traduzivel">BookSmart</h5>
+                  <div class="card-body">
+                    <a target="_blank" href="https://github.com/ViniciusBenevidesdaSilva/BookSmart">
+                      <img src="assets/images/projeto-05-BookSmart.png" class="img-fluid py-4"
+                        alt="Tela principal BookSmart">
+                      <p id="projetoBookSmartTexto" class="card-text traduzivel">PoC de serviços encontrados em um mercado autônomo integrando <b>IoT</b>, 
+                        bancos de dados relacionais e não relacionais e .NET Core em uma estrutura Web MVC</p>
+                    </a>
+                    <div class="accordion accordion-flush pt-3" id="accordionFlushFive">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            <i class="bi bi-tools"></i>&nbsp;
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushFive">
+                          <ul class="text-start">
+                            <li class="pt-2">.Net Core</li>
+                            <li>HTML, CSS, JS</li>
+                            <li>SQL Server/Mongo DB</li>
+                            <li>Arduino</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--tecnologias-->
+    <section id="tecnologias" class="bg-white">
+      <div class="container">
+        <div class="row pb-5">
+          <h2 id="tecnologiaTitulo" class="traduzivel">Principais Tecnologias e Habilidades</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <input id="searchInput" type="text" class="form-control mb-3" placeholder="Pesquisar habilidades...">
+          </div>
+        </div>
+        <div class="row" id="skillsList">
+          <!-- Habilidades -->
+        </div>
+      </div>
+    </section>
+
+    <!--experiencias-->
+    <section id="experiencias" class="bg-light">
+      <div class="container">
+        <div class="row pb-5">
+          <h2 id="experienciaTitulo" class="traduzivel">Experiências Prévias</h2>
+        </div>
+        <div class="row justify-content-evenly ">
+          <div class="card" style="width: 18rem;">
+            <div id="popoverTm" class="hover-popover" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Estágio"
+              data-bs-content="Desenvolvimento e Manutenção de Sistemas WEB (Intranet, B2B, Plataformas Analíticas), ETL, C#, .Net Core, Sql Server">
+              <img src="assets/images/experiencia-tm.png" class="card-img-top img-fluid p-2"
+                alt="Imagem panorâmica da empresa Termomecanica SP SA">
+              <div class="card-body">
+                <h5 id="experienciaTmTitulo" class="card-title traduzivel">Estágio em Desenvolvimento de Sistemas</h5>
+                <p class="card-text">Termomecanica SP SA</p>
+                <p class="card-text">Agosto/2022 - Atualmente</p>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div id="popoverArenaSolidario" class="hover-popover" data-bs-toggle="popover" data-bs-placement="bottom"
+              data-bs-title="Trabalho Voluntário"
+              data-bs-content="Criação de material de estudo preparatório para vestibular para alunos do Ensino Médio">
+              <img src="assets/images/experiencia-arenaSolidaria.png" class="card-img-top img-fluid p-2"
+                alt="Logo Arena Solidária">
+              <div class="card-body">
+                <h5 id="experienciaArenaSolidariaTitulo" class="card-title traduzivel">Arena Solidária</h5>
+                <p class="card-text">Faculdade Eng. Salvador Arena</p>
+                <p id="experienciaArenaSolidariaPeriodo" class="card-text traduzivel">Janeiro/2022 - Junho/2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div id="popoverIniciacao" class="hover-popover" data-bs-toggle="popover" data-bs-placement="bottom"
+              data-bs-title="Modelo Preditivo do Desempenho Acadêmico"
+              data-bs-content="Desenvolvimento de um sistema de IA em Python capaz de predizer o desempenho acadêmico dos alunos de Engenharia">
+              <a target="_blank" href="http://saijournal.cefsa.org.br/index.php/FTT/article/view/509">
+                <img src="assets/images/experiencia-iniciacaoCientifica.png" class="card-img-top img-fluid p-2"
+                  alt="Capa da revista FTT-Journal">
+                <div class="card-body">
+                  <h5 id="experienciaIniciacaoTitulo" class="card-title traduzivel">Iniciação Científica</h5>
+                  <p class="card-text">Faculdade Eng. Salvador Arena</p>
+                  <p id="experienciaIniciacaoPeriodo" class="card-text traduzivel">Agosto/2022 - Junho/2023</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--idiomas-->
+    <section id="idiomas" class="bg-white">
+      <div class="container">
+        <div class="row pb-5">
+          <h2 id="idiomaTitulo" class="traduzivel">Idiomas</h2>
+        </div>
+        <div class="btn-group btn-lang" role="group" aria-label="Botões de idiomas disponíveis">
+          <div class="row justify-content-between">
+            <div class="col-3">
+              <input type="radio" class="btn-check" name="btnradio" id="btn-portugues" autocomplete="off" checked>
+              <label for="btn-portugues"><img src="assets/images/idioma-pt-br.png" alt="Idioma Português-Brasil" class="img-fluid"></label>
+            </div>
+            <div class="col-3">
+              <input type="radio" class="btn-check" name="btnradio" id="btn-ingles" autocomplete="off">
+              <label for="btn-ingles"><img src="assets/images/idioma-en.png" alt="Idioma Inglês" class="img-fluid"></label>
+            </div>
+            <div class="col-3">
+              <input type="radio" class="btn-check" name="btnradio" id="btn-espanhol" autocomplete="off">
+              <label for="btn-espanhol"><img src="assets/images/idioma-es.png" alt="Idioma Espanhol" class="img-fluid"></label>
+            </div>
+            <div class="col-3">
+              <input type="radio" class="btn-check" name="btnradio" id="btn-frances" autocomplete="off">
+              <label for="btn-frances"><img src="assets/images/idioma-fr.png" alt="Idioma Francês" class="img-fluid"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--content-->
+
+  <a id="scrollTopButton" class="d-none fixed-bottom" href="#main"><i class="bi bi-arrow-up-circle-fill h2"></i></a>
+
+  <!-- footer -->
+  <footer id="footer"
+    class="footer fixed-bottom bg-light d-flex flex-wrap justify-content-between align-items-center px-5 py-3">
+    <div>
+      <p>
+        &copy;<span id="data"></span> Vinícius Benevides da Silva
+      </p>
+    </div>
+    <!--contatos-->
+    <ul class="nav list-unstyled">
+      <li class="ms-3"><a class="text-muted" target="_blank"
+          href="mailto:viniciusbenevidesdasilva16@gmail.com?subject=Hello There!&body=Olá Vinícius! Encontrei ao acaso seu portifólio navegando pela internet e devo dizer que ele é mesmo impressionante!"><i
+            class="bi bi-envelope h4"></i></a>
+      </li>
+      <li class="ms-3"><a class="text-muted" target="_blank" href="https://www.linkedin.com/in/vinicius-benevides/"><i
+            class="bi bi-linkedin h4"></i></a></li>
+      <li class="ms-3"><a class="text-muted" target="_blank" href="https://github.com/ViniciusBenevidesdaSilva"><i
+            class="bi bi-github h4"></i></a></li>
+    </ul>
+    <!--contatos-->
+  </footer>
+  <!-- footer -->
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/language.js"></script>
+</body>
+
+</html>

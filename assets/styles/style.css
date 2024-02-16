@@ -1,0 +1,164 @@
+
+/* Textos animados */
+:root {
+  --text-1: "Desenvolvedor Front-End";
+  --text-2: "Cientista de Dados";
+  --text-3: "Desenvolvedor Back-End";
+  --text-4: "Designer";
+  --text-5: "Engenheiro";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto !important;
+    min-height: 100vh;
+    padding-top: 5vh;
+  }
+
+  #experiencias .card {
+    margin-bottom: 5vh;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #383838;
+}
+
+li {
+  list-style-type: none;
+}
+
+.card {
+  align-items: center;
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-body {
+  max-height: 75vh;
+  max-width: 75vh;
+}
+
+.card img {
+  max-height: 40vh;
+  width: auto;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #acacac;
+  border-radius: 25%;
+  margin: 10%;
+}
+
+.skill-item {
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.skill-item.hidden {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.btn-lang label img {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.btn-lang label:hover img,
+.btn-lang input:checked + label img {
+  filter: grayscale(0%);
+}
+
+
+footer {
+  height: 10vh;
+}
+
+#scrollTopButton {
+  position: fixed;
+  bottom: 11vh;
+  left: 2vh;
+}
+
+
+/* Texto animado */
+
+.animated-text span {
+  position: relative;
+}
+
+.animated-text span::before {
+  content: "Desenvolvedor Front-End";
+  animation: words 20s infinite;
+  margin: 3px;
+}
+
+.animated-text span::after {
+  content: '';
+  margin: 3px;
+  background-color: #F8F9FA;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 2px solid #ebebeb;
+  right: -8px;
+  animation: cursor .6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+      border-left: 2px solid #383838;
+  }
+}
+
+@keyframes words {
+  0%,20% {
+    content: var(--text-1);
+  }
+  21%,40% {
+    content: var(--text-2);
+  }
+  41%,60% {
+    content: var(--text-3);
+  }
+  61%,80% {
+    content: var(--text-4);
+  }
+  61%,80% {
+    content: var(--text-5);
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+      width: 0;
+  }
+
+  5%,20%,25%,40%,45%,60%,65%,80%,85% {
+      width: calc(100% + 8px);
+  }
+}
+
+/* Texto animado */
