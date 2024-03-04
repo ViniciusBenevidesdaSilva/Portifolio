@@ -146,10 +146,22 @@ const traducoes = {
         frances: "Technologies et compétences clés"
     },
     experienciaTitulo: {
-        portugues: "Experiências Prévias",
-        ingles: "Previous Experiences",
-        espanhol: "Experiencias previas",
-        frances: "Expériences précedentes"
+        portugues: "Experiências",
+        ingles: "Experiences",
+        espanhol: "Experiencias",
+        frances: "Expériences"
+    },
+    experienciaAvanadeTitulo: {
+        portugues: "Assoc, Full Stack Developer",
+        ingles: "Assoc, Full Stack Developer",
+        espanhol: "Assoc, Full Stack Developer",
+        frances: "Assoc, Full Stack Developer"
+    },
+    experienciaAvanadePeriodo: {
+        portugues: "Abril/2024 - Atualmente",
+        ingles: "April/2024 - Currently",
+        espanhol: "Abril/2024 - Actualmente",
+        frances: "Avril/2024 - Actuellement"
     },
     experienciaTmTitulo: {
         portugues: "Estágio em Desenvolvimento de Sistemas",
@@ -158,10 +170,10 @@ const traducoes = {
         frances: "Stage en développement de systèmes"
     },
     experienciaTmPeriodo: {
-        portugues: "Agosto/2022 - Atualmente",
-        ingles: "August/2022 - Currently",
-        espanhol: "Agosto/2022 - Actualmente",
-        frances: "Août/2022 - Actuellement"
+        portugues: "Agosto/2022 - Março/2024",
+        ingles: "August/2022 - March/2024",
+        espanhol: "Agosto/2022 - Marzo/2024",
+        frances: "Août/2022 - Mars/2024"
     },
     experienciaArenaSolidariaTitulo: {
         portugues: "Arena Solidária",
@@ -257,12 +269,15 @@ function alterarIdioma(idioma) {
 }
 
 function alterarPopover(idioma) {
+    const popoverAvanade = document.getElementById("popoverAvanade");
     const popoverTm = document.getElementById("popoverTm");
     const popoverArenaSolidario = document.getElementById("popoverArenaSolidario");
     const popoverIniciacao = document.getElementById("popoverIniciacao");
 
     switch (idioma) {
         case 'portugues':
+            popoverAvanade.setAttribute("data-bs-title", "Estágio");
+            popoverAvanade.setAttribute("data-bs-content", "Atuação em projetos .Net WEB, com ferramentas Microsoft, focado em entregas ágeis com qualidade");
             popoverTm.setAttribute("data-bs-title", "Estágio");
             popoverTm.setAttribute("data-bs-content", "Desenvolvimento e Manutenção de Sistemas WEB (Intranet, B2B, Plataformas Analíticas), ETL, C#, .Net Core, Sql Server");
             popoverArenaSolidario.setAttribute("data-bs-title", "Trabalho Voluntário");
@@ -271,6 +286,8 @@ function alterarPopover(idioma) {
             popoverIniciacao.setAttribute("data-bs-content", "Desenvolvimento de um sistema de IA em Python capaz de predizer o desempenho acadêmico dos alunos de Engenharia");
             break;
         case 'ingles':
+            popoverAvanade.setAttribute("data-bs-title", "Internship");
+            popoverAvanade.setAttribute("data-bs-content", "Expertise in .Net WEB projects, with Microsoft tools, focused on agile deliveries with quality");
             popoverTm.setAttribute("data-bs-title", "Internship");
             popoverTm.setAttribute("data-bs-content", "Development and Maintenance of WEB Systems (Intranet, B2B, Analytical Platforms), ETL, C#, .Net Core, Sql Server");
             popoverArenaSolidario.setAttribute("data-bs-title", "Volunteer work");
@@ -279,6 +296,8 @@ function alterarPopover(idioma) {
             popoverIniciacao.setAttribute("data-bs-content", "Development of an AI system in Python capable of predicting the academic performance of Engineering students");
             break;
         case 'espanhol':
+            popoverAvanade.setAttribute("data-bs-title", "Práctica");
+            popoverAvanade.setAttribute("data-bs-content", "Experiencia en proyectos WEB .Net, con herramientas Microsoft, enfocados a entregas ágiles y con calidad.");
             popoverTm.setAttribute("data-bs-title", "Práctica");
             popoverTm.setAttribute("data-bs-content", "Desarrollo y Mantenimiento de Sistemas WEB (Intranet, B2B, Plataformas Analíticas), ETL, C#, .Net Core, Sql Server");
             popoverArenaSolidario.setAttribute("data-bs-title", "Trabajo voluntario");
@@ -287,6 +306,8 @@ function alterarPopover(idioma) {
             popoverIniciacao.setAttribute("data-bs-content", "Desarrollo de un sistema de IA en Python capaz de predecir el rendimiento académico de estudiantes de Ingeniería");
             break;
         case 'frances':
+            popoverAvanade.setAttribute("data-bs-title", "Stage");
+            popoverAvanade.setAttribute("data-bs-content", "Expertise dans les projets WEB .Net, avec les outils Microsoft, axée sur des livraisons agiles et de qualité");
             popoverTm.setAttribute("data-bs-title", "Stage");
             popoverTm.setAttribute("data-bs-content", "Développement et Maintenance de Systèmes WEB (Intranet, B2B, Plateformes Analytiques), ETL, C#, .Net Core, Sql Server");
             popoverArenaSolidario.setAttribute("data-bs-title", "Bénévolat");

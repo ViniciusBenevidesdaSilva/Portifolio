@@ -123,6 +123,7 @@ const skills = [
 
 const searchInput = document.getElementById('searchInput');
 
+
 searchInput.addEventListener('input', function () {
   const searchTerm = searchInput.value.toLowerCase().trim();
   const filteredSkills = skills.filter(skill => skill.name.toLowerCase().includes(searchTerm));
@@ -131,6 +132,7 @@ searchInput.addEventListener('input', function () {
 
 function renderSkills(skills) {
   const skillsListContainer = document.getElementById('skillsList');
+
   skillsListContainer.innerHTML = '';
 
   skills.forEach(skill => {
@@ -144,5 +146,4 @@ function renderSkills(skills) {
 }
 
 renderSkills(skills);
-
 

@@ -6,6 +6,9 @@
   --text-3: "Desenvolvedor Back-End";
   --text-4: "Designer";
   --text-5: "Engenheiro";
+
+  --background-animation-color: #F8F9FA;
+  --link-color : #383838;
 }
 
 html {
@@ -33,11 +36,19 @@ section {
 
 a {
   text-decoration: none;
-  color: #383838;
+  color: var(--link-color);
+}
+
+.bg-dark-2 {
+  background-color: #282f33;
 }
 
 li {
   list-style-type: none;
+}
+
+.ui-sortable div p {
+  cursor: pointer;
 }
 
 .card {
@@ -91,7 +102,6 @@ li {
   filter: grayscale(0%);
 }
 
-
 footer {
   height: 10vh;
 }
@@ -118,11 +128,10 @@ footer {
 .animated-text span::after {
   content: '';
   margin: 3px;
-  background-color: #F8F9FA;
+  background-color: var(--background-animation-color);
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  border-left: 2px solid #ebebeb;
   right: -8px;
   animation: cursor .6s infinite, typing 20s steps(14) infinite;
 }
